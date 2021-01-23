@@ -7,9 +7,19 @@ body {
   --primary-nav:#fff;
   --primary-orange:#f0ab00;
   --primary-dark:rgba(255,255,255,0);
+  --primary-red:#e70f00;
+  --primary-hover-red:#f33505;
+  --primary-light:rgba(0, 0, 0, 0.445);
+}
+/*******************Header**********************/
+#header{
+  
 }
 .logo{
   width: 16.25rem;
+}
+.navbar{
+  z-index: 2;
 }
 /***** Menu link*****/
 nav a.nav-link{
@@ -34,4 +44,52 @@ nav ul li {
 }
 .navbar-nav > li > a:active, .navbar-nav >li > a:focus,.navbar-nav >li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+/*******************Header**********************/
+.header-wraper{
+  position: relative;
+  background: url(wallandlaptop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+/*********************Typed-text************************/
+.typed-text{
+  font-size: 2rem;
+  color:var(--primary-nav);
+}
+/*********************Contractw me button************************/
+.btn-main-offer{
+      border: 1px solid var(--primary-red);
+      font-weight: 600;
+      background-color: var(--primary-light);
+      color: var(--primary-nav);
+      text-transform: uppercase;
+      padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+      margin: 2rem;
+      z-index: 2;
+}
+/*********************partical************************/
+.tsparticles-canvas-el{
+  position: absolute;
+  z-index: 1;
 }
